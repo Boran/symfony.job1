@@ -1,0 +1,14 @@
+{% extends "bpptest1Bundle::layout.html.twig" %}
+
+{% block title "BPP - tests" %}
+
+{% block content_header '' %}
+
+{% block content %}
+    <h1> Hello {{ name }}!  </h1>
+
+    <ul id="demo-list">
+        <li><a href="{{ path('_demo_hello', {'name': 'World'}) }}">Hello World</a></li>
+        <li><a href="{{ path('_demo_secured_hello', {'name': 'World'}) }}">Access the secured area</a> <a href="{{ path('_demo_login') }}">Go to the login page</a></li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,9 @@
+bpp\Test1Bundle\Entity\Job:
+  properties:
+    id:
+      - Notblank: ~
+    cust_code:
+      - Notblank: ~
+    lastchange:
+      - Notblank: ~
+      - Type: \DateTime

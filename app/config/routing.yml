@@ -1,0 +1,4 @@
+test1:
+    resource: "@bppTest1Bundle/Controller/"
+    type:     annotation
+    prefix:   /

@@ -1,0 +1,38 @@
+
+# Just print barcode value received
+bp_barcode:
+    pattern:  /barcode/{name}
+    defaults: { _controller: bppTest1Bundle:Default:bar }
+bm_barcode:
+    pattern:  /boranmpk/barcode/{name}
+    defaults: { _controller: bppTest1Bundle:Default:bar }
+
+# Print job details
+bp_pallet:
+    pattern:  /pallet/{name}
+    defaults: { _controller: bppTest1Bundle:Default:view }
+bm_pallet:
+    pattern:  /boranmpk/pallet/{name}
+    defaults: { _controller: bppTest1Bundle:Default:view
+
+bpp_newjob:
+    pattern:  /job/new
+    defaults: { _controller: bppTest1Bundle:Default:new }
+bp_job1:
+    pattern:  /job/{name}
+    defaults: { _controller: bppTest1Bundle:Default:view }
+bm_job1:
+    pattern:  /boranmpk/job/{name}
+    defaults: { _controller: bppTest1Bundle:Default:view }
+
+# Not working
+bpp_job2:
+    pattern:  /job/{name}/status
+    defaults: { _controller: bppTest1Bundle:Default:jobstatus }
+
+# original test:
+bpp_test1_homepage:
+    pattern:  /hello2/{name}/{name2}
+    defaults: { _controller: bppTest1Bundle:Default:index }
+    #defaults: { _controller: bppTest1Bundle:Hello:index }
+    #defaults: { _controller: bppTest1Bundle:Hello:hello, var1: foo }
