@@ -17,6 +17,7 @@ As root:
   php composer.phar install
   rm -rf app/cache/dev/* app/cache/prod/*
   php app/console assets:install web --symlink
+# Linux/Ubuntu:
   chown -R www-data app/cache app/logs
   su www-data -c 'php app/console cache:clear --env=dev --no-debug'
   su www-data -c 'php app/console cache:clear --env=prod --no-debug'
